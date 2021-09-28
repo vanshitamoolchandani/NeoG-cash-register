@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanshita | Cash Register</title>
-</head>
-<body>
-    <h1>CASH REGISTER</h1>
-    <div>
-    <label id = "cash-amount" >Cash Amount</label>
-    <input id = "cash-amount" ></input>
-</div>
-<div>
-    <label id = "bill-amount" >Bill Amount</label>
-    <input id = "bill-amount" ></input>
-</div>
-<button id = "check-button">CHECK</button>
-<p id ="error-message"></p>
-<table>
-    <tr>
-        <th>Number of Notes</th>
-        <th id = "no=of-notes"></th>
-        <th id = "no=of-notes"></th>
-        <th id = "no=of-notes"></th>
-        <th id = "no=of-notes"></th>
-        <th id = "no=of-notes"></th>
-        <th id = "no=of-notes"></th>
-    </tr>
-    <tr>
-        <th>Availabe Notes</th>
-        <th>2000</th>
-        <th>500</th>
-        <th>100</th>
-        <th>20</th>
-        <th>10</th>
-        <th>1</th>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="backgrounfColor">
+      <div class = "alignc">
+        <div class="bgColor"><h1 class="heading ">Cash Register Manager</h1></div>
+        <p>
+          Enter the bill amount and cash given by the customer and know minimum
+          number of notes to return.
+        </p>
+        <div>
+        <label class="label" for="bill-amount"><strong>Bill Amount:</strong></label>
+        <input class="txt-box" type="number" id="bill-amount" type="text" />
+    <div style="height: 2vh;"></div>
 
-    </tr>
-</table>
-</body>
+    <div>
+        <label class="label" for="cash-given"><strong>Cash Given:</strong></label>
+        <input class="txt-box" type="number" id="cash-given" type="text" />
+    </div>
+    <div style="height: 5vh;"></div>
+
+        <button class="chk-button" id="check-button">Check</button>
+        <p id="error-message"></p>
+        
+        <table class="table">
+          <caption>
+            Return Change
+          </caption>
+
+          <tr>
+            <th class="td">No of Notes</th>
+            <td class="td no-of-notes"></td>
+            <td class="td no-of-notes"></td>
+            <td class="td no-of-notes"></td>
+            <td class="td no-of-notes"></td>
+            <td class="td no-of-notes"></td>
+            <td class="td no-of-notes"></td>
+            <td class="td no-of-notes "></td>
+          </tr>
+          <tr>
+            <th class="td">Note</th>
+            <td class="td">2000</td>
+            <td class="td">500</td>
+            <td class="td">100</td>
+            <td class="td">20</td>
+            <td class="td">10</td>
+            <td class="td">5</td>
+            <td class="td">1</td>
+          </tr>
+        </table>
+      </div>
+      <div style="height: 5vh;"></div>
+
+      <footer class="footer alignc">
+        <div>
+            <h2 class="alignc">Social Network</h2>
+            <ul class="footer list-nobullets">
+                <li class="list-inline"><a class="link"
+                        href="https://www.linkedin.com/in/vanshita-moolchandani/">Linkedin</a></li>
+                <li class="list-inline"><a class="link"
+                        href="https://www.instagram.com/vanshitamoolchandani/">Instagram</a></li>
+                <li class="list-inline"><a class="link" href="https://github.com/vanshitamoolchandani">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+  
+    <script src="index.js" type="text/javascript"></script>
+  </body>
 </html>
