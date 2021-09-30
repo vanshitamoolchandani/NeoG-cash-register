@@ -4,14 +4,16 @@
 :root {
     --primary-color: #004380;
     --off-white: #F3F4F6;
-    --dark-red: #8b132f;
+    --dark-red: #F0D3F7;
+    --black: #080705;
+    
 }
 
 .backgrounfColor{
     background-color: var(--off-white);
 }
 .heading{
-    color: var(--off-white);
+    color: black;
 }
 .bgColor{
     background-color: var(--dark-red);
@@ -49,7 +51,7 @@ body {
   }
 
   .chk-button {
-    background: var(--primary-color);
+    background: var(--black);
     border: none;
     color: white;
     padding: 0.7rem 2rem;
@@ -73,15 +75,19 @@ body {
     
   
   .footer{
-    background-color: var(--primary-color);
-    border-top: 1rem;
+    background-color: var(--black);
     color: white;
     padding-left: 1rem;
     padding-top: 0.1rem;
     padding-inline-start: 0px;
     padding-bottom: 1rem;
-
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:20%; 
 }
+
+
 
 
 .list-nobullets{
