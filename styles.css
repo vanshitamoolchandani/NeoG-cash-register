@@ -8,7 +8,9 @@
     --black: #080705;
     
 }
-
+.social {
+  font-size: 3rem;
+}
 .backgrounfColor{
     background-color: var(--off-white);
 }
